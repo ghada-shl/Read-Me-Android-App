@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ScannerActivity">
+
+    <ImageView
+        android:id="@+id/idIVCaptureImage"
+        android:layout_width="306dp"
+        android:layout_height="208dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/image_view" />
+
+    <TextView
+        android:id="@+id/idTVDetectedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVCaptureImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="4dp"
+        android:text="Your Result will appear here"
+        android:textColor="@color/font_color_green"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDetectedText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_back"
+        android:text="snap"
+        android:textSize="15dp"
+        app:backgroundTint="@color/font_color_green" />
+
+    <Button
+        android:id="@+id/btnDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/btnSnap"
+        android:layout_marginTop="30dp"
+        android:text="Detect"
+        android:textSize="15dp"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/font_color_green" />
+    <Button
+        android:id="@+id/btnCopy"
+        android:visibility="gone"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/btnDetect"
+        android:layout_marginTop="30dp"
+        android:text="Copy"
+        android:textSize="15dp"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/font_color_green" />
+
+</RelativeLayout>
